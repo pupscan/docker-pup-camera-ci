@@ -1,7 +1,7 @@
 # https://github.com/bitrise-docker/android/blob/master/Dockerfile
 FROM ubuntu:bionic
 
-RUN apt-get update -qq && apt-get install -y -qq cmake swig
+RUN apt-get update -qq && apt-get install -y -qq cmake swig python2.7 python3 curl
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-8-jdk libc6 libstdc++6 libgcc1 libncurses5 libz1 wget unzip
 
